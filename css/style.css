@@ -6,7 +6,7 @@
 }
 .head{
     font-size: 64px;
-    color: rgb(214, 250, 13);
+    color: #362FD9;
     position: relative;
 }
 .head::before{
