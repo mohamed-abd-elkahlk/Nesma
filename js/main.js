@@ -29,6 +29,7 @@ let englishB = document.getElementById("english");
 HomeB.onclick = function () {
   welcomeText.classList.add("d-none");
   homePage.classList.remove("d-none");
+  homePage.style.animation = "abeer 1s linear";
 };
 
 homeButton.onclick = function () {
@@ -38,6 +39,7 @@ homeButton.onclick = function () {
   since.classList.add("d-none");
   english.classList.add("d-none");
   math.classList.add("d-none");
+  homePage.style.animation = "abeer 1s linear";
 };
 
 aboutButton.onclick = function () {
@@ -47,6 +49,7 @@ aboutButton.onclick = function () {
   since.classList.add("d-none");
   english.classList.add("d-none");
   math.classList.add("d-none");
+  aboutDiv.style.animation = "abeer 1s linear";
 };
 
 contactB.onclick = function () {
@@ -56,6 +59,7 @@ contactB.onclick = function () {
   since.classList.add("d-none");
   english.classList.add("d-none");
   math.classList.add("d-none");
+  contact.style.animation = "abeer 1s linear";
 };
 mathB.onclick = function () {
   header.classList.add("d-none");
@@ -64,6 +68,7 @@ mathB.onclick = function () {
   since.classList.add("d-none");
   english.classList.add("d-none");
   math.classList.remove("d-none");
+  math.style.animation = "abeer 1s linear";
 };
 
 sinceB.onclick = function () {
@@ -73,6 +78,7 @@ sinceB.onclick = function () {
   since.classList.remove("d-none");
   english.classList.add("d-none");
   math.classList.add("d-none");
+  since.style.animation = "abeer 1s linear";
 };
 
 englishB.onclick = function () {
@@ -82,4 +88,5 @@ englishB.onclick = function () {
   since.classList.add("d-none");
   english.classList.remove("d-none");
   math.classList.add("d-none");
+  english.style.animation = "abeer 1s linear";
 };

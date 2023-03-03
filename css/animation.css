@@ -89,3 +89,41 @@
         transform: translateY(0%);
     }
 }
+
+.home {
+    /* animation: anim 1s linear; */
+    position: relative;
+}
+
+@keyframes abeer {
+    0% {
+        left: 50%;
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .8;
+    }
+
+    100% {
+        left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes disabeer {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        left: -50%;
+        opacity: 0;
+    }
+}
+
+
+#header {
+    position: relative;
+    animation: abeer 1s linear;
+}
