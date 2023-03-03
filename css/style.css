@@ -4,12 +4,35 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-.head{
+
+:root {
+    --Soft-red: hsl(10, 79%, 65%);
+    --Cyan: hsl(186, 34%, 60%);
+    --Dark-brown: hsl(25, 47%, 15%);
+    --Medium-brown: hsl(28, 10%, 53%);
+    --Cream: hsl(27, 66%, 92%);
+    --Very-pale-orange: hsl(33, 100%, 98%);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+main {
+    background-color: var(--Soft-red);
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+}
+
+.head {
     font-size: 64px;
-    color: #362FD9;
+    color: var(--Dark-brown);
     position: relative;
 }
-.head::before{
+
+/* .head::before {
     content: "";
     position: absolute;
     background-color: #00F5FF;
@@ -17,8 +40,9 @@
     height: 2px;
     left: 50%;
     transform: translateX(-50%);
-}
-.head::after{
+} */
+
+.head::after {
     content: "";
     position: absolute;
     background-color: #00F5FF;
@@ -28,6 +52,7 @@
     top: 110%;
     transform: translateX(-50%);
 }
+
 .navbar a {
     font-size: 18px;
 }
@@ -45,7 +70,8 @@ header {
 }
 
 header img {
-    margin-left: 120px;
+    /* height: 600px; */
+    width: 460px;
 }
 
 .welcome {
@@ -57,34 +83,40 @@ header img {
 }
 
 
-.wwd{
-    background-image: url(../images/nsplsh_c290af62eb9f471993ab237d268a34ec_mv2.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh; 
+.About {
+    /* background-image: url(../images/nsplsh_c290af62eb9f471993ab237d268a34ec_mv2.webp); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    background-color: var(--Very-pale-orange);
+    min-height: auto;
+    border-top: 2px solid var(--Dark-brown);
 }
-.wwd h1{
+
+.About h1 {
     font-size: 54px;
     color: #FDFF00;
     font-weight: bold;
     position: relative;
 }
 
-.wwd h2{
+.About h2 {
     font-size: 42px;
     font-weight: bold;
     color: #3A98B9;
 }
-.wwd p{
-    color: #ECF2FF  ;
+
+.About p {
+    color: var(--Medium-brown);
     font-size: 22px;
 }
-.wwd hr{
+
+.About hr {
     width: 50%;
     color: black;
     font-size: 8px;
     margin: 0 auto;
 }
+
 @media (max-width:767px) {
     header img {
         margin: 0;
@@ -101,65 +133,116 @@ header img {
     .welcome button {
         margin-left: 35%;
     }
-    .welcome hr{
+
+    .welcome hr {
         display: none;
     }
-    .wwd h1{
+
+    .About h1 {
         font-size: 24px;
     }
 }
-.since{
+
+.since {
     background-color: rgb(255, 241, 224)
 }
-.space{
+
+.since img {
+    height: 420px;
+}
+
+.space {
     position: relative;
 }
-.metorid{
+
+.metorid {
     position: absolute;
-    right:30px;
+    right: 30px;
     top: 50px;
 }
+
 @media (max-width:989px) {
-    .metorid{
+    .metorid {
         display: none;
     }
 }
+
 .since p {
     font-size: 24px;
 }
+
 .math {
-    background-image: url(../images/chalkboard-with-math-elements_1411-88.avif);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
+    background-color: var(--Very-pale-orange);
 }
-.Physics{
+
+.Physics {
     background-color: rgb(255, 241, 224);
 }
-.Physics img{
+
+.Physics img {
     width: 100%;
     height: 650px;
 }
-.english{
+
+.english {
     background-color: antiquewhite;
 }
-.english img{
+
+.english img {
     width: 100%;
     height: 650px;
 }
-.contact{
+
+.contact {
     background-color: wheat;
+    /* position: absolute; */
 }
-.copy{
+
+/* .contact::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: black;
+} */
+
+.con .copy {
     display: flex;
     flex-direction: column;
     text-align: center;
 }
-footer{
+
+footer {
     background-color: black;
 }
-footer ul li:hover{
+
+footer ul li:hover {
     cursor: pointer;
     color: #00F5FF;
     transition: .3s
+}
+
+.chat {
+    width: 4;
+}
+
+.navbar,
+header,
+.since {
+    background-color: var(--Very-pale-orange);
+}
+
+.home {
+    width: 1140px;
+}
+
+@media (max-width:1139px) {
+    .home {
+        width: auto;
+    }
+}
+
+@media (max-width:767px) {
+    .vid {
+        margin-left: 20px;
+    }
 }
