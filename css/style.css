@@ -94,7 +94,7 @@ header img {
 
 .About h1 {
     font-size: 54px;
-    color: #FDFF00;
+    color: var(--Dark-brown);
     font-weight: bold;
     position: relative;
 }
